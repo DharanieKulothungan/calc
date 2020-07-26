@@ -1,0 +1,35 @@
+<html>
+  <head>
+        <title>Input tutorial</title>
+        <script language="javascript">
+                function addNumbers()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 + val2;
+                }
+                function Multiply()
+                {
+                      var mul = document.getElementById("Multiply");
+                      mul.value = parseInt(document.getElementById("value1").value) * parseInt(document.getElementById("value2").value);
+                }
+                function subtraction()
+                {
+                      var sub = document.getElementById("subtraction");
+                      sub.value = parseInt(document.getElementById("value1").value) - parseInt(document.getElementById("value2").value);
+                }
+        </script>
+  </head>
+  <body style = "background-color:cadetblue">
+        value1 = <input type="text" id="value1" name="value1" /><br><br>
+        value2 = <input type="text" id="value2" name="value2" /><br><br>
+       <b><input type="button" name="Sumbit" value="Add" style = "color:blue;" onclick="javascript:addNumbers()"/></b><br>
+        Add_answer = <input type="text" id="answer" name="answer" value=""/><br><br>
+        <b><input type="button" name="Sumbit" value="Multiply" style = "color: blue;" onclick="javascript:Multiply()"/></b><br>
+        Multiply_answer = <input type="text" id="Multiply" name="Multiply" value=""/><br><br>
+        <b><input type="button" name="Sumbit" value="subtraction" style = "color: blue;" onclick="javascript:subtraction()"/></b><br>
+        subtraction_answer = <input type="text" id="subtraction" name="subtraction" value=""/>
+        
+  </body>
+</html>
